@@ -34,6 +34,16 @@ a{
     text-decoration: none;
 }
 
+button{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+}
+
 .row{
     width: 100%;
 }
@@ -41,6 +51,10 @@ a{
 header{
     background-color: var(--general-color);
     width: 100%;
+}
+
+header .top-nav{
+    padding: 10px;
 }
 
 header .top-nav,
@@ -76,9 +90,139 @@ header .logo img{
     }
 }
 
-header .nav-links a{
+
+header .menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 0;
+    padding: 0;
+    position: relative;
+    flex-direction: column;
+}
+
+header .nav-links{
+    padding: 0 15px;
+    margin-bottom: 0;
+    flex-direction: row;
+    cursor: pointer;
+
+}
+
+header .nav-links a.link{
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding: 12px;
     color: #fff;
 }
+
+ header .nav-links a.active{
+    color: var(--primary-color);
+ }
+
+header .flags{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .flags button{
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+header .flags button img{
+    width: 35px;
+    height: 35px;
+}
+
+header .menu-button{
+    width: 70px;
+    height: 50px;
+    font-size: 22px;
+    transition: all .2s;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+}
+
+header .menu-button:hover{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+header .menuu-button i{
+    color: var(--primary-color);
+}
+
+.offcanvas{
+    background-color: var(--general-color);
+}
+
+.offcanvas-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offcanvas-body .nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offcanvas-body .nav-links .link:hover{
+    color: var(--general-color);
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.offcanvas-body .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.offcanvas-body .flags{
+    margin-top: 20px;
+}
+
+.offcanvas-body .social-icons{
+    display: flex;
+}
+
+.offcanvas-body .social-icons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+}
+
+.offcanvas-body .social-icons .link:hover{
+    border-radius: 50%;
+    color: var(--general-color);
+    background-color: var(--primary-color);
+    transition: all .3s;
+    border: 1px solid var(--primary-color);
+}
+
+.offcanvas-body .social-icons .link i{
+    font-size: 20px;
+    align-items: center;
+}
+
 
 .swiper{
     width: 100%;

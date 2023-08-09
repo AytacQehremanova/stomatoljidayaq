@@ -1,4 +1,4 @@
-const bannerSwiper = new Swiper(" .banner-swiper", {
+const bannerSwiper = new Swiper(".banner-swiper", {
     slidesPerView: 1,
     
     loop: true,
@@ -8,5 +8,9 @@ const bannerSwiper = new Swiper(" .banner-swiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });

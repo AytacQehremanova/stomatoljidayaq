@@ -274,6 +274,7 @@ header .menuu-button i{
     align-items: center;
 }
 
+
 .swiper-slide .banner-img{
     width: 100%;
     min-height: 80vh;
@@ -509,6 +510,7 @@ section.form .form-content{
     align-items: center;
     padding: 30px;
     width: 100%;
+    min-height: 830px;
 }
 
 section.form .form-content .f_component{
@@ -623,6 +625,10 @@ section.partners .container{
     margin-top: 40px;
 }
 
+section.partners .swiper-pagination{              
+    margin-bottom: -12px;
+}
+
 section.partners .section-title{
     font-weight: 500;
 }
@@ -649,6 +655,10 @@ section.partners .section-title::after{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+section.workers .swiper-pagination{              
+    margin-bottom: -10px;
 }
 
 .swiper .swiper-pagination-bullet{
@@ -684,12 +694,15 @@ section.workers .worker-amount span{
     font-size: 22px;
 }
 
-section.workers .worker-slide{
+section.workers .swiper-slide{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
+    min-height: 230px;
     margin-top: 10px;
+    position: relative;
 }
 
 section.workers .worker-card{
@@ -697,21 +710,38 @@ section.workers .worker-card{
     width: 100%;
     height: 100%;
     margin: 15px;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+section.workers .swiper-slide:hover .worker-card{
+    transform: rotateY(180deg);
+}
+
+section.workers .card-face.front{
+    position: absolute;
+    height: 180px;
+    width: 190px;
+    backface-visibility: hidden;
 }
 
 section.workers .worker-card .card-face.front img{
     border-radius: 10px;
-    height: 200px;
-    width: 200px;
+    width: 100%;
+    height: 100%;
 }
 
 section.workers .card-face.back{
     background-color: var(--primary-color);
     border-radius: 10px;
+    height: 180px;
+    width: 190px;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
 }
-

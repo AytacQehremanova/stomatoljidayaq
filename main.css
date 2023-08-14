@@ -475,11 +475,17 @@ section.form .general-form{
     width: 100%;
 }
 
+section.form{
+    background: linear-gradient(30deg,var(--general-color) 50%, var(--primary-color) 50% 100%);
+}
+
 @media only screen and (min-width:992px){
     section.form{
         background: linear-gradient(to right, var(--general-color) 50%, var(--primary-color) 50% 100%);
     }
 }
+
+
 
 section.form .form-title{
     color: #fff;
@@ -519,17 +525,99 @@ section.form .input-group-text{
     color: #fff;
     border-color: var(--primary-color);
     padding: 0 15px;
+    transition: all 0.3s;
 }
-/* 
-section.form .input-group-text:hover{
+
+.f_component:hover input{
+    border-color: var(--primary-color);
+}
+
+.f_component:hover .input-group-text{
     background-color: #fff;
     color: var(--primary-color);
-} */
-
-section.form .input-group:hover{
-    border: 1px solid var(--primary-color);
 }
 
+section.form .form-check-input:checked{
+    box-shadow: none;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+section.form .form-checkbox{
+    margin-bottom: 5px;
+}
+
+section.form .file-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+section.form .file-input input{
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+    appearance: none;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+section.form input.form-control:focus{
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+section.form .file-input span{
+    border:  1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 60px 10px 13px;
+}
+
+section.form .file-input button{
+    position: absolute;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 7px 12px;
+    text-transform: uppercase;
+}
+
+section.form .submit-button{
+    background-color: var(--primary-color);
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    align-self: flex-end;
+    margin: 10px 0;
+    padding: 15px 30px;
+    border: 3px solid var(--primary-color);
+}
+
+section.form .submit-button:hover{
+    background-color: #fff;
+    color: var(--primary-color);
+    transition: all .3s;
+}
+
+section.form span,
+section.form label,
+section.form .form-select{
+    color: rgba(0, 0, 0, .7);
+}
 
 section.partners .container{
     margin-top: 40px;

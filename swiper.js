@@ -31,12 +31,12 @@ const bannerSwiper = new Swiper(".banner-swiper", {
     breakpoints:{
       700:{
         slidesPerView:3,
-        spaceBetween:60,
+        spaceBetween:30,
       },
 
       1024:{
         slidesPerView:5,
-        spaceBetween:50,
+        spaceBetween:30,
       }
     }
   });
@@ -57,12 +57,12 @@ const bannerSwiper = new Swiper(".banner-swiper", {
     breakpoints:{
       700:{
         slidesPerView:3,
-        spaceBetween:60,
+        spaceBetween:30,
       },
 
       1024:{
         slidesPerView:6,
-        spaceBetween:50,
+        spaceBetween:30,
       }
     }
   });

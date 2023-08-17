@@ -28,6 +28,10 @@
   </head>
 
   <body>
+    <button onclick="scrollToTop" class="page-scroll-button">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <header id="header">
       <nav class="top-nav">
         <div class="container">
@@ -36,13 +40,13 @@
               <img src="image/image/logo/logo.png" alt="logo" />
             </a>
             <div class="menu d-none d-xl-flex">
-              <div class="nav-links">
-                <a class="link active">Əsas Səhifə</a>
-                <a class="link">Haqqımızda</a>
-                <a class="link">Müraciət</a>
-                <a class="link">Tərəfdaşlar</a>
-                <a class="link">Qalereya</a>
-                <a class="link">Hesabat</a>
+              <div class="nav-links page-links">
+                <a href="#" class="link">Əsas Səhifə</a>
+                <a href="#" class="link">Haqqımızda</a>
+                <a href="#appeal" class="link">Müraciət</a>
+                <a href="#" class="link">Tərəfdaşlar</a>
+                <a href="#" class="link">Qalereya</a>
+                <a href="#report" class="link">Hesabat</a>
                 <a class="link">Əlaqə</a>
               </div>
             </div>
@@ -88,8 +92,8 @@
               </div>
 
               <div class="offcanvas-body">
-                <div class="nav-links">
-                  <a class="link active">Əsas Səhifə</a>
+                <div class="nav-links page-links">
+                  <a class="link">Əsas Səhifə</a>
                   <a class="link">Haqqımızda</a>
                   <a class="link">Müraciət</a>
                   <a class="link">Tərəfdaşlar</a>
@@ -140,7 +144,8 @@
     </header>
 
     <main>
-      <section class="home">
+
+      <section class="home" data-scroll="true">
         <div class="swiper banner-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -214,7 +219,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" data-scroll="true">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -262,7 +267,7 @@
         </div>
       </section>
 
-      <section class="form">
+      <section class="form" data-scroll="true" id="appeal">
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-6">
@@ -618,7 +623,7 @@
         </div>
       </section>
 
-      <section class="partners">
+      <section class="partners" data-scroll="true">
         <div class="container">
           <h2 class="section-title">Tərəfdaşlar</h2>
           <div class="swiper partners-swiper">
@@ -674,7 +679,7 @@
         </div>
       </section>
 
-      <section class="workers">
+      <section class="workers" data-scroll="false">
         <div class="container">
           <h2 class="section-title">Həkim və texniklərimiz</h2>
           <div class="worker-amount">
@@ -808,7 +813,7 @@
         </div>
       </section>
 
-      <section class="gallery">
+      <section class="gallery" data-scroll="true">
         <div class="container">
           <h2 class="section-title">Qalereya</h2>
           <div class="gallery-buttons">
@@ -818,7 +823,10 @@
             <button data-id="3">Emosiyalar</button>
           </div>
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col" data-category-id="1">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
+              data-category-id="1"
+            >
               <div class="item">
                 <div class="image">
                   <img src="/image/image/gallery/img-1.jpg" alt="gallery" />
@@ -833,7 +841,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col" data-category-id="1">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
+              data-category-id="1"
+            >
               <div class="item">
                 <div class="image">
                   <img src="/image/image/gallery/img-2.jpg" alt="gallery" />
@@ -848,141 +859,181 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col" data-category-id="1">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
+              data-category-id="1"
+            >
               <div class="item">
                 <div class="image">
                   <img src="/image/image/gallery/img-3.jpg" alt="gallery" />
                   <div class="hover">
                     <a
-                    data-fancybox="gallery" 
-                    data-src="/image/image/gallery/img-3.jpg">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                      data-fancybox="gallery"
+                      data-src="/image/image/gallery/img-3.jpg"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col" data-category-id="1">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
+              data-category-id="1"
+            >
               <div class="item">
                 <div class="image">
                   <img src="/image/image/gallery/img-4.jpg" alt="gallery" />
                   <div class="hover">
                     <a
-                    data-fancybox="gallery" 
-                    data-src="/image/image/gallery/img-4.jpg">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                      data-fancybox="gallery"
+                      data-src="/image/image/gallery/img-4.jpg"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col" data-category-id="2">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
+              data-category-id="2"
+            >
               <div class="item">
                 <div class="image">
                   <img src="/image/image/gallery/img-5.jpg" alt="gallery" />
                   <div class="hover">
                     <a
-                    data-fancybox="gallery" 
-                    data-src="/image/image/gallery/img-5.jpg">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                      data-fancybox="gallery"
+                      data-src="/image/image/gallery/img-5.jpg"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col" data-category-id="2">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
+              data-category-id="2"
+            >
               <div class="item">
                 <div class="image">
                   <img src="/image/image/gallery/img-6.jpg" alt="gallery" />
                   <div class="hover">
                     <a
-                    data-fancybox="gallery" 
-                    data-src="/image/image/gallery/img-6.jpg">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                      data-fancybox="gallery"
+                      data-src="/image/image/gallery/img-6.jpg"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col" data-category-id="2">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
+              data-category-id="2"
+            >
               <div class="item">
                 <div class="image">
                   <img src="/image/image/gallery/img-7.jpg" alt="gallery" />
                   <div class="hover">
                     <a
-                    data-fancybox="gallery" 
-                    data-src="/image/image/gallery/img-7.jpg">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                      data-fancybox="gallery"
+                      data-src="/image/image/gallery/img-7.jpg"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col" data-category-id="2">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
+              data-category-id="2"
+            >
               <div class="item">
                 <div class="image">
                   <img src="/image/image/gallery/img-8.jpg" alt="gallery" />
                   <div class="hover">
                     <a
-                    data-fancybox="gallery" 
-                    data-src="/image/image/gallery/img-8.jpg">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                      data-fancybox="gallery"
+                      data-src="/image/image/gallery/img-8.jpg"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col" data-category-id="3">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
+              data-category-id="3"
+            >
               <div class="item">
                 <div class="image">
                   <img src="/image/image/gallery/img-9.jpg" alt="gallery" />
                   <div class="hover">
                     <a
-                    data-fancybox="gallery" 
-                    data-src="/image/image/gallery/img-9.jpg">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                      data-fancybox="gallery"
+                      data-src="/image/image/gallery/img-9.jpg"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col" data-category-id="3">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
+              data-category-id="3"
+            >
               <div class="item">
                 <div class="image">
                   <img src="/image/image/gallery/img-10.jpg" alt="gallery" />
                   <div class="hover">
                     <a
-                    data-fancybox="gallery" 
-                    data-src="/image/image/gallery/img-10.jpg">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                      data-fancybox="gallery"
+                      data-src="/image/image/gallery/img-10.jpg"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col" data-category-id="3">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
+              data-category-id="3"
+            >
               <div class="item">
                 <div class="image">
                   <img src="/image/image/gallery/img-11.jpg" alt="gallery" />
                   <div class="hover">
                     <a
-                    data-fancybox="gallery" 
-                    data-src="/image/image/gallery/img-11.jpg">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                      data-fancybox="gallery"
+                      data-src="/image/image/gallery/img-11.jpg"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col" data-category-id="3">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
+              data-category-id="3"
+            >
               <div class="item">
                 <div class="image">
                   <img src="/image/image/gallery/img-12.jpg" alt="gallery" />
                   <div class="hover">
                     <a
-                    data-fancybox="gallery" 
-                    data-src="/image/image/gallery/img-12.jpg">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                      data-fancybox="gallery"
+                      data-src="/image/image/gallery/img-12.jpg"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                   </div>
                 </div>
@@ -992,73 +1043,138 @@
         </div>
       </section>
 
-      <section class="counter">
+      <section class="counter" data-scroll="true" id="report">
         <div class="container">
           <h2 class="section-title">Hesabat</h2>
-          <span class="counter-value">Göstərilən xidmətlərin şərti hesablanmış məbləği 538 506.00 AZN</span>
+          <span class="counter-value"
+            >Göstərilən xidmətlərin şərti hesablanmış məbləği 538 506.00
+            AZN</span
+          >
           <div class="row">
-
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
               <div class="counter-item">
-                <img src="/image/image/counter/img-1.png" alt="counter">
+                <img src="/image/image/counter/img-1.png" alt="counter" />
                 <span class="counter-span" data-val="375">000</span>
                 <span class="label">Pasiyentlər</span>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
               <div class="counter-item">
-                <img src="/image/image/counter/img-2.png" alt="counter">
+                <img src="/image/image/counter/img-2.png" alt="counter" />
                 <span class="counter-span" data-val="688">000</span>
                 <span class="label">diş müalicəsi</span>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
               <div class="counter-item">
-                <img src="/image/image/counter/img-3.png" alt="counter">
+                <img src="/image/image/counter/img-3.png" alt="counter" />
                 <span class="counter-span" data-val="528">000</span>
                 <span class="label">diş bərpası</span>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
               <div class="counter-item">
-                <img src="/image/image/counter/img-4.png" alt="counter">
+                <img src="/image/image/counter/img-4.png" alt="counter" />
                 <span class="counter-span" data-val="116">000</span>
                 <span class="label">rentgen müayinələri</span>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
               <div class="counter-item">
-                <img src="/image/image/counter/img-5.png" alt="counter">
+                <img src="/image/image/counter/img-5.png" alt="counter" />
                 <span class="counter-span" data-val="157">000</span>
                 <span class="label">total protezlər</span>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
               <div class="counter-item">
-                <img src="/image/image/counter/img-6.png" alt="counter">
+                <img src="/image/image/counter/img-6.png" alt="counter" />
                 <span class="counter-span" data-val="1257">000</span>
                 <span class="label">keramika qapaqlar</span>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
               <div class="counter-item">
-                <img src="/image/image/counter/img-7.png" alt="counter">
+                <img src="/image/image/counter/img-7.png" alt="counter" />
                 <span class="counter-span" data-val="517">000</span>
                 <span class="label">cərrahi prosedurlar</span>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
               <div class="counter-item">
-                <img src="/image/image/counter/img-8.png" alt="counter">
+                <img src="/image/image/counter/img-8.png" alt="counter" />
                 <span class="counter-span" data-val="25">00</span>
                 <span class="label">ortodondik aparatlar</span>
               </div>
             </div>
-  
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" data-scroll="true">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="section-title">Əlaqə</h2>
+            </div>
+            <div class="col-12 col-lg-3 left-col">
+              <a class="logo">
+                <img src="image/image/logo/logo.png" alt="logo" />
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="contact-wrapper">
+                <div class="link">
+                  <span class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+                  <span class="label"
+                    >AZ5000, Sumqayıt şəhəri, Səməd VUrğun küç. 101-131</span
+                  >
+                </div>
+                <div class="link">
+                  <span class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+                  <span class="label">+994 50 440-32-55</span>
+                </div>
+                <div class="link">
+                  <span class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </span>
+                  <span class="label">info@dayaq.az</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 right-col">
+              <div class="social-icons">
+                <div class="link">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="link">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="link">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+              </div>
+              <div class="card-link">
+                <img src="/image/image/footer/netty2022.jpg" alt="footer" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="text">
+          <p>Stomatoloji Dayaq Layihəsi © 2023. Bütün hüquqlar qorunur</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>

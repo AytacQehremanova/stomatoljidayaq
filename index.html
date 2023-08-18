@@ -25,6 +25,7 @@
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
     <link rel="stylesheet" href="main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -144,7 +145,6 @@
     </header>
 
     <main>
-
       <section class="home" data-scroll="true">
         <div class="swiper banner-swiper">
           <div class="swiper-wrapper">
@@ -156,10 +156,10 @@
                 <div class="content">
                   <div class="container">
                     <div class="text">
-                      <div class="large-text">
+                      <div class="large-text" data-aos="fade-down">
                         <p>Könüllülərimiz peşəkarlardır</p>
                       </div>
-                      <div class="small-text">
+                      <div class="small-text" data-aos="fade-up">
                         <p>
                           Peşəkar stomatoloq və diş texnikləri layihəmizdə
                           təmənnasız xidmət göstərən könüllülərimizdir
@@ -178,11 +178,11 @@
               >
                 <div class="content">
                   <div class="container">
-                    <div class="text">
+                    <div class="text" data-aos="fade-up" data-aos="fade-down">
                       <div class="large-text">
                         <p>Gülmək sizə yaraşır</p>
                       </div>
-                      <div class="small-text">
+                      <div class="small-text" data-aos="fade-up">
                         <p>Həyat sizin gülüşünüzlə gözəldir</p>
                       </div>
                     </div>
@@ -199,10 +199,10 @@
                 <div class="content">
                   <div class="container">
                     <div class="text">
-                      <div class="large-text">
+                      <div class="large-text" data-aos="fade-down">
                         <p>Sağlam təbəssümü əlçatan etdik</p>
                       </div>
-                      <div class="small-text">
+                      <div class="small-text" data-aos="fade-up">
                         <p>
                           Onlar üçün əlçatmaz hesab etdikləri bahalı stomatoloji
                           xidmətlər artıq əlçatandır
@@ -222,10 +222,10 @@
       <section class="about" data-scroll="true">
         <div class="container">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12"  data-aos="fade-up">
               <h2 class="section-title">Stomotoloji Dayaq Layihəsi Haqqında</h2>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6" data-aos="fade-up">
               <div class="content">
                 <h5 class="text-title">Haqqımızda</h5>
                 <div class="text">
@@ -245,7 +245,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6" data-aos="fade-up">
               <div class="content">
                 <h5 class="text-title">Məqsədimiz</h5>
                 <div class="text">
@@ -268,362 +268,370 @@
       </section>
 
       <section class="form" data-scroll="true" id="appeal">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <form class="general-form left">
-                <span class="form-title">Həkim və texniklərin qeydiyyatı</span>
-                <div class="form-content">
-                  <div class="f_component">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Ad, Soyad və Ata adı *"
-                      />
-                      <span class="input-group-text">
-                        <i class="fa-solid fa-user"></i>
+        <div data-aos="fade-up">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <form class="general-form left">
+                  <span class="form-title"
+                    >Həkim və texniklərin qeydiyyatı</span
+                  >
+                  <div class="form-content">
+                    <div class="f_component">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ad, Soyad və Ata adı *"
+                        />
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-user"></i>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="f_component">
+                      <span class="f_label">
+                        Hansı sahədə yardım edə bilərsiniz?
                       </span>
-                    </div>
-                  </div>
-
-                  <div class="f_component">
-                    <span class="f_label">
-                      Hansı sahədə yardım edə bilərsiniz?
-                    </span>
-                    <div class="checkbox-wrapper">
-                      <div class="form-checkbox">
-                        <input type="checkbox" class="form-check-input" />
-                        <label class="form-check-label">Cərrahiyə</label>
-                      </div>
-                      <div class="form-checkbox">
-                        <input type="checkbox" class="form-check-input" />
-                        <label class="form-check-label">İmplant</label>
-                      </div>
-                      <div class="form-checkbox">
-                        <input type="checkbox" class="form-check-input" />
-                        <label class="form-check-label"> Terapiya</label>
-                      </div>
-                      <div class="form-checkbox">
-                        <input type="checkbox" class="form-check-input" />
-                        <label class="form-check-label">
-                          Uşaq stomotologiyası</label
-                        >
-                      </div>
-                      <div class="form-checkbox">
-                        <input type="checkbox" class="form-check-input" />
-                        <label class="form-check-label"> Ortodontiya</label>
-                      </div>
-                      <div class="form-checkbox">
-                        <input type="checkbox" class="form-check-input" />
-                        <label class="form-check-label">Periodontologiya</label>
-                      </div>
-                      <div class="form-checkbox">
-                        <input type="checkbox" class="form-check-input" />
-                        <label class="form-check-label">Ortopediya</label>
-                      </div>
-                      <div class="form-checkbox">
-                        <input type="checkbox" class="form-check-input" />
-                        <label class="form-check-label"> Diş texniki</label>
+                      <div class="checkbox-wrapper">
+                        <div class="form-checkbox">
+                          <input type="checkbox" class="form-check-input" />
+                          <label class="form-check-label">Cərrahiyə</label>
+                        </div>
+                        <div class="form-checkbox">
+                          <input type="checkbox" class="form-check-input" />
+                          <label class="form-check-label">İmplant</label>
+                        </div>
+                        <div class="form-checkbox">
+                          <input type="checkbox" class="form-check-input" />
+                          <label class="form-check-label"> Terapiya</label>
+                        </div>
+                        <div class="form-checkbox">
+                          <input type="checkbox" class="form-check-input" />
+                          <label class="form-check-label">
+                            Uşaq stomotologiyası</label
+                          >
+                        </div>
+                        <div class="form-checkbox">
+                          <input type="checkbox" class="form-check-input" />
+                          <label class="form-check-label"> Ortodontiya</label>
+                        </div>
+                        <div class="form-checkbox">
+                          <input type="checkbox" class="form-check-input" />
+                          <label class="form-check-label"
+                            >Periodontologiya</label
+                          >
+                        </div>
+                        <div class="form-checkbox">
+                          <input type="checkbox" class="form-check-input" />
+                          <label class="form-check-label">Ortopediya</label>
+                        </div>
+                        <div class="form-checkbox">
+                          <input type="checkbox" class="form-check-input" />
+                          <label class="form-check-label"> Diş texniki</label>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="f_component">
-                    <select class="form-select">
-                      <option value="disabled-value">
-                        Fəaliyyət göstərdiyiniz regionu seçin *
-                      </option>
-                      <option value="Abşeron">Abşeron</option>
-                      <option value="Ağcəbədi">Ağcəbədi</option>
-                      <option value="Ağdam">Ağdam</option>
-                      <option value="Ağdaş">Ağdaş</option>
-                      <option value="Ağstafa">Ağstafa</option>
-                      <option value="Ağsu">Ağsu</option>
-                      <option value="Astara">Astara</option>
-                      <option value="Bakı">Bakı</option>
-                      <option value="Babək">Babək</option>
-                      <option value="Balakən">Balakən</option>
-                      <option value="Beyləqan">Beyləqan</option>
-                      <option value="Bərdə">Bərdə</option>
-                      <option value="Biləsuvar">Biləsuvar</option>
-                      <option value="Cəbrayıl">Cəbrayıl</option>
-                      <option value="Cəlilabad">Cəlilabad</option>
-                      <option value="Culfa">Culfa</option>
-                      <option value="Daşkəsən">Daşkəsən</option>
-                      <option value="Fizuli">Fizuli</option>
-                      <option value="Gədəbəy">Gədəbəy</option>
-                      <option value="Gəncə">Gəncə</option>
-                      <option value="Goranboy">Goranboy</option>
-                      <option value="Göyçay">Göyçay</option>
-                      <option value="Göygöl">Göygöl</option>
-                      <option value="Hacıqabul">Hacıqabul</option>
-                      <option value="Xaçmaz">Xaçmaz</option>
-                      <option value="Xızı">Xızı</option>
-                      <option value="Xocalı">Xocalı</option>
-                      <option value="Xocavənd">Xocavənd</option>
-                      <option value="İmişli">İmişli</option>
-                      <option value="İsmayıllı">İsmayıllı</option>
-                      <option value="Kəlbəcər">Kəlbəcər</option>
-                      <option value="Kəngərli">Kəngərli</option>
-                      <option value="Kürdəmir">Kürdəmir</option>
-                      <option value="Qax">Qax</option>
-                      <option value="Qazax">Qazax</option>
-                      <option value="Qəbələ">Qəbələ</option>
-                      <option value="Qobustan">Qobustan</option>
-                      <option value="Quba">Quba</option>
-                      <option value="Qubadlı">Qubadlı</option>
-                      <option value="Qusar">Qusar</option>
-                      <option value="Laçın">Laçın</option>
-                      <option value="Lənkəran">Lənkəran</option>
-                      <option value="Lerik">Lerik</option>
-                      <option value="Masallı">Masallı</option>
-                      <option value="Mingəçevir">Mingəçevir</option>
-                      <option value="Naxçıvan">Naxçıvan</option>
-                      <option value="Naftalan">Naftalan</option>
-                      <option value="Neftçala">Neftçala</option>
-                      <option value="Oğuz">Oğuz</option>
-                      <option value="Ordubad">Ordubad</option>
-                      <option value="Saatlı">Saatlı</option>
-                      <option value="Sabirabad">Sabirabad</option>
-                      <option value="Salyan">Salyan</option>
-                      <option value="Samux">Samux</option>
-                      <option value="Sədərək">Sədərək</option>
-                      <option value="Şabran">Şabran</option>
-                      <option value="Şahbuz">Şahbuz</option>
-                      <option value="Şamaxı">Şamaxı</option>
-                      <option value="Şəki">Şəki</option>
-                      <option value="Şəmkir">Şəmkir</option>
-                      <option value="Şərur">Şərur</option>
-                      <option value="Siyəzən">Siyəzən</option>
-                      <option value="Şirvan">Şrvan</option>
-                      <option value="Şuşa">Şuşa</option>
-                      <option value="Sumqayıt">Sumqayıt</option>
-                      <option value="Tərtər">Tərtər</option>
-                      <option value="Tovuz">Tovuz</option>
-                      <option value="Ucar">Ucar</option>
-                      <option value="Yardımlı">Yardımlı</option>
-                      <option value="Yevlax">Yevlax</option>
-                      <option value="Xankəndi">Xankəndi</option>
-                      <option value="Zaqatala">Zaqatala</option>
-                      <option value="Zəngilan">Zəngilan</option>
-                      <option value="Zərdab">Zərdab</option>
-                    </select>
-                  </div>
+                    <div class="f_component">
+                      <select class="form-select">
+                        <option value="disabled-value">
+                          Fəaliyyət göstərdiyiniz regionu seçin *
+                        </option>
+                        <option value="Abşeron">Abşeron</option>
+                        <option value="Ağcəbədi">Ağcəbədi</option>
+                        <option value="Ağdam">Ağdam</option>
+                        <option value="Ağdaş">Ağdaş</option>
+                        <option value="Ağstafa">Ağstafa</option>
+                        <option value="Ağsu">Ağsu</option>
+                        <option value="Astara">Astara</option>
+                        <option value="Bakı">Bakı</option>
+                        <option value="Babək">Babək</option>
+                        <option value="Balakən">Balakən</option>
+                        <option value="Beyləqan">Beyləqan</option>
+                        <option value="Bərdə">Bərdə</option>
+                        <option value="Biləsuvar">Biləsuvar</option>
+                        <option value="Cəbrayıl">Cəbrayıl</option>
+                        <option value="Cəlilabad">Cəlilabad</option>
+                        <option value="Culfa">Culfa</option>
+                        <option value="Daşkəsən">Daşkəsən</option>
+                        <option value="Fizuli">Fizuli</option>
+                        <option value="Gədəbəy">Gədəbəy</option>
+                        <option value="Gəncə">Gəncə</option>
+                        <option value="Goranboy">Goranboy</option>
+                        <option value="Göyçay">Göyçay</option>
+                        <option value="Göygöl">Göygöl</option>
+                        <option value="Hacıqabul">Hacıqabul</option>
+                        <option value="Xaçmaz">Xaçmaz</option>
+                        <option value="Xızı">Xızı</option>
+                        <option value="Xocalı">Xocalı</option>
+                        <option value="Xocavənd">Xocavənd</option>
+                        <option value="İmişli">İmişli</option>
+                        <option value="İsmayıllı">İsmayıllı</option>
+                        <option value="Kəlbəcər">Kəlbəcər</option>
+                        <option value="Kəngərli">Kəngərli</option>
+                        <option value="Kürdəmir">Kürdəmir</option>
+                        <option value="Qax">Qax</option>
+                        <option value="Qazax">Qazax</option>
+                        <option value="Qəbələ">Qəbələ</option>
+                        <option value="Qobustan">Qobustan</option>
+                        <option value="Quba">Quba</option>
+                        <option value="Qubadlı">Qubadlı</option>
+                        <option value="Qusar">Qusar</option>
+                        <option value="Laçın">Laçın</option>
+                        <option value="Lənkəran">Lənkəran</option>
+                        <option value="Lerik">Lerik</option>
+                        <option value="Masallı">Masallı</option>
+                        <option value="Mingəçevir">Mingəçevir</option>
+                        <option value="Naxçıvan">Naxçıvan</option>
+                        <option value="Naftalan">Naftalan</option>
+                        <option value="Neftçala">Neftçala</option>
+                        <option value="Oğuz">Oğuz</option>
+                        <option value="Ordubad">Ordubad</option>
+                        <option value="Saatlı">Saatlı</option>
+                        <option value="Sabirabad">Sabirabad</option>
+                        <option value="Salyan">Salyan</option>
+                        <option value="Samux">Samux</option>
+                        <option value="Sədərək">Sədərək</option>
+                        <option value="Şabran">Şabran</option>
+                        <option value="Şahbuz">Şahbuz</option>
+                        <option value="Şamaxı">Şamaxı</option>
+                        <option value="Şəki">Şəki</option>
+                        <option value="Şəmkir">Şəmkir</option>
+                        <option value="Şərur">Şərur</option>
+                        <option value="Siyəzən">Siyəzən</option>
+                        <option value="Şirvan">Şrvan</option>
+                        <option value="Şuşa">Şuşa</option>
+                        <option value="Sumqayıt">Sumqayıt</option>
+                        <option value="Tərtər">Tərtər</option>
+                        <option value="Tovuz">Tovuz</option>
+                        <option value="Ucar">Ucar</option>
+                        <option value="Yardımlı">Yardımlı</option>
+                        <option value="Yevlax">Yevlax</option>
+                        <option value="Xankəndi">Xankəndi</option>
+                        <option value="Zaqatala">Zaqatala</option>
+                        <option value="Zəngilan">Zəngilan</option>
+                        <option value="Zərdab">Zərdab</option>
+                      </select>
+                    </div>
 
-                  <div class="f_component">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="İş yerinin ünvanı *"
-                      />
-                      <span class="input-group-text">
-                        <i class="fa-solid fa-house"></i>
+                    <div class="f_component">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="İş yerinin ünvanı *"
+                        />
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-house"></i>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="f_component">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="055XXXXXXX"
+                        />
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-phone"></i>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="f_component">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="E-mail *"
+                        />
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-envelope"></i>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="f_component">
+                      <span class="f_label">
+                        Foto portret şəklinizi yükləyin *
                       </span>
+                      <div class="file-input">
+                        <input type="file" value />
+                        <span>Şəkili yükləyin</span>
+                        <button type="submit">yüklə</button>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="f_component">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="055XXXXXXX"
-                      />
-                      <span class="input-group-text">
-                        <i class="fa-solid fa-phone"></i>
+                    <button type="submit" class="submit-button">göndər</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <form class="general-form right">
+                  <span class="form-title"
+                    >Həkim və texniklərin qeydiyyatı</span
+                  >
+                  <div class="form-content">
+                    <div class="f_component">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ad, Soyad və Ata adı *"
+                        />
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-user"></i>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="f_component">
+                      <select class="form-select">
+                        <option value="disabled-value">
+                          Yaşadığınız bölgəni seçin *
+                        </option>
+                        <option value="Abşeron">Abşeron</option>
+                        <option value="Ağcəbədi">Ağcəbədi</option>
+                        <option value="Ağdam">Ağdam</option>
+                        <option value="Ağdaş">Ağdaş</option>
+                        <option value="Ağstafa">Ağstafa</option>
+                        <option value="Ağsu">Ağsu</option>
+                        <option value="Astara">Astara</option>
+                        <option value="Bakı">Bakı</option>
+                        <option value="Babək">Babək</option>
+                        <option value="Balakən">Balakən</option>
+                        <option value="Beyləqan">Beyləqan</option>
+                        <option value="Bərdə">Bərdə</option>
+                        <option value="Biləsuvar">Biləsuvar</option>
+                        <option value="Cəbrayıl">Cəbrayıl</option>
+                        <option value="Cəlilabad">Cəlilabad</option>
+                        <option value="Culfa">Culfa</option>
+                        <option value="Daşkəsən">Daşkəsən</option>
+                        <option value="Fizuli">Fizuli</option>
+                        <option value="Gədəbəy">Gədəbəy</option>
+                        <option value="Gəncə">Gəncə</option>
+                        <option value="Goranboy">Goranboy</option>
+                        <option value="Göyçay">Göyçay</option>
+                        <option value="Göygöl">Göygöl</option>
+                        <option value="Hacıqabul">Hacıqabul</option>
+                        <option value="Xaçmaz">Xaçmaz</option>
+                        <option value="Xızı">Xızı</option>
+                        <option value="Xocalı">Xocalı</option>
+                        <option value="Xocavənd">Xocavənd</option>
+                        <option value="İmişli">İmişli</option>
+                        <option value="İsmayıllı">İsmayıllı</option>
+                        <option value="Kəlbəcər">Kəlbəcər</option>
+                        <option value="Kəngərli">Kəngərli</option>
+                        <option value="Kürdəmir">Kürdəmir</option>
+                        <option value="Qax">Qax</option>
+                        <option value="Qazax">Qazax</option>
+                        <option value="Qəbələ">Qəbələ</option>
+                        <option value="Qobustan">Qobustan</option>
+                        <option value="Quba">Quba</option>
+                        <option value="Qubadlı">Qubadlı</option>
+                        <option value="Qusar">Qusar</option>
+                        <option value="Laçın">Laçın</option>
+                        <option value="Lənkəran">Lənkəran</option>
+                        <option value="Lerik">Lerik</option>
+                        <option value="Masallı">Masallı</option>
+                        <option value="Mingəçevir">Mingəçevir</option>
+                        <option value="Naxçıvan">Naxçıvan</option>
+                        <option value="Naftalan">Naftalan</option>
+                        <option value="Neftçala">Neftçala</option>
+                        <option value="Oğuz">Oğuz</option>
+                        <option value="Ordubad">Ordubad</option>
+                        <option value="Saatlı">Saatlı</option>
+                        <option value="Sabirabad">Sabirabad</option>
+                        <option value="Salyan">Salyan</option>
+                        <option value="Samux">Samux</option>
+                        <option value="Sədərək">Sədərək</option>
+                        <option value="Şabran">Şabran</option>
+                        <option value="Şahbuz">Şahbuz</option>
+                        <option value="Şamaxı">Şamaxı</option>
+                        <option value="Şəki">Şəki</option>
+                        <option value="Şəmkir">Şəmkir</option>
+                        <option value="Şərur">Şərur</option>
+                        <option value="Siyəzən">Siyəzən</option>
+                        <option value="Şirvan">Şrvan</option>
+                        <option value="Şuşa">Şuşa</option>
+                        <option value="Sumqayıt">Sumqayıt</option>
+                        <option value="Tərtər">Tərtər</option>
+                        <option value="Tovuz">Tovuz</option>
+                        <option value="Ucar">Ucar</option>
+                        <option value="Yardımlı">Yardımlı</option>
+                        <option value="Yevlax">Yevlax</option>
+                        <option value="Xankəndi">Xankəndi</option>
+                        <option value="Zaqatala">Zaqatala</option>
+                        <option value="Zəngilan">Zəngilan</option>
+                        <option value="Zərdab">Zərdab</option>
+                      </select>
+                    </div>
+
+                    <div class="f_component">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ünvan *"
+                        />
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-house"></i>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="f_component">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="055XXXXXXX"
+                        />
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-phone"></i>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="f_component">
+                      <span class="f_label">
+                        Pasiyentin şəxsiyyət vəsiqəsinin ön tərəfininin şəklini
+                        yüklə *
                       </span>
+                      <div class="file-input">
+                        <input type="file" value />
+                        <span>Sənəd yüklə</span>
+                        <button type="submit">yüklə</button>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="f_component">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="E-mail *"
-                      />
-                      <span class="input-group-text">
-                        <i class="fa-solid fa-envelope"></i>
+                    <div class="f_component">
+                      <span class="f_label">
+                        Pasiyentin şəxsiyyət vəsiqəsinin arxa tərəfininin
+                        şəklini yüklə *
                       </span>
+                      <div class="file-input">
+                        <input type="file" value />
+                        <span>Sənəd yüklə</span>
+                        <button type="submit">yüklə</button>
+                      </div>
                     </div>
+
+                    <button type="submit" class="submit-button">göndər</button>
                   </div>
-
-                  <div class="f_component">
-                    <span class="f_label">
-                      Foto portret şəklinizi yükləyin *
-                    </span>
-                    <div class="file-input">
-                      <input type="file" value />
-                      <span>Şəkili yükləyin</span>
-                      <button type="submit">yüklə</button>
-                    </div>
-                  </div>
-
-                  <button type="submit" class="submit-button">göndər</button>
-                </div>
-              </form>
-            </div>
-
-            <div class="col-12 col-lg-6">
-              <form class="general-form right">
-                <span class="form-title">Həkim və texniklərin qeydiyyatı</span>
-                <div class="form-content">
-                  <div class="f_component">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Ad, Soyad və Ata adı *"
-                      />
-                      <span class="input-group-text">
-                        <i class="fa-solid fa-user"></i>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="f_component">
-                    <select class="form-select">
-                      <option value="disabled-value">
-                        Yaşadığınız bölgəni seçin *
-                      </option>
-                      <option value="Abşeron">Abşeron</option>
-                      <option value="Ağcəbədi">Ağcəbədi</option>
-                      <option value="Ağdam">Ağdam</option>
-                      <option value="Ağdaş">Ağdaş</option>
-                      <option value="Ağstafa">Ağstafa</option>
-                      <option value="Ağsu">Ağsu</option>
-                      <option value="Astara">Astara</option>
-                      <option value="Bakı">Bakı</option>
-                      <option value="Babək">Babək</option>
-                      <option value="Balakən">Balakən</option>
-                      <option value="Beyləqan">Beyləqan</option>
-                      <option value="Bərdə">Bərdə</option>
-                      <option value="Biləsuvar">Biləsuvar</option>
-                      <option value="Cəbrayıl">Cəbrayıl</option>
-                      <option value="Cəlilabad">Cəlilabad</option>
-                      <option value="Culfa">Culfa</option>
-                      <option value="Daşkəsən">Daşkəsən</option>
-                      <option value="Fizuli">Fizuli</option>
-                      <option value="Gədəbəy">Gədəbəy</option>
-                      <option value="Gəncə">Gəncə</option>
-                      <option value="Goranboy">Goranboy</option>
-                      <option value="Göyçay">Göyçay</option>
-                      <option value="Göygöl">Göygöl</option>
-                      <option value="Hacıqabul">Hacıqabul</option>
-                      <option value="Xaçmaz">Xaçmaz</option>
-                      <option value="Xızı">Xızı</option>
-                      <option value="Xocalı">Xocalı</option>
-                      <option value="Xocavənd">Xocavənd</option>
-                      <option value="İmişli">İmişli</option>
-                      <option value="İsmayıllı">İsmayıllı</option>
-                      <option value="Kəlbəcər">Kəlbəcər</option>
-                      <option value="Kəngərli">Kəngərli</option>
-                      <option value="Kürdəmir">Kürdəmir</option>
-                      <option value="Qax">Qax</option>
-                      <option value="Qazax">Qazax</option>
-                      <option value="Qəbələ">Qəbələ</option>
-                      <option value="Qobustan">Qobustan</option>
-                      <option value="Quba">Quba</option>
-                      <option value="Qubadlı">Qubadlı</option>
-                      <option value="Qusar">Qusar</option>
-                      <option value="Laçın">Laçın</option>
-                      <option value="Lənkəran">Lənkəran</option>
-                      <option value="Lerik">Lerik</option>
-                      <option value="Masallı">Masallı</option>
-                      <option value="Mingəçevir">Mingəçevir</option>
-                      <option value="Naxçıvan">Naxçıvan</option>
-                      <option value="Naftalan">Naftalan</option>
-                      <option value="Neftçala">Neftçala</option>
-                      <option value="Oğuz">Oğuz</option>
-                      <option value="Ordubad">Ordubad</option>
-                      <option value="Saatlı">Saatlı</option>
-                      <option value="Sabirabad">Sabirabad</option>
-                      <option value="Salyan">Salyan</option>
-                      <option value="Samux">Samux</option>
-                      <option value="Sədərək">Sədərək</option>
-                      <option value="Şabran">Şabran</option>
-                      <option value="Şahbuz">Şahbuz</option>
-                      <option value="Şamaxı">Şamaxı</option>
-                      <option value="Şəki">Şəki</option>
-                      <option value="Şəmkir">Şəmkir</option>
-                      <option value="Şərur">Şərur</option>
-                      <option value="Siyəzən">Siyəzən</option>
-                      <option value="Şirvan">Şrvan</option>
-                      <option value="Şuşa">Şuşa</option>
-                      <option value="Sumqayıt">Sumqayıt</option>
-                      <option value="Tərtər">Tərtər</option>
-                      <option value="Tovuz">Tovuz</option>
-                      <option value="Ucar">Ucar</option>
-                      <option value="Yardımlı">Yardımlı</option>
-                      <option value="Yevlax">Yevlax</option>
-                      <option value="Xankəndi">Xankəndi</option>
-                      <option value="Zaqatala">Zaqatala</option>
-                      <option value="Zəngilan">Zəngilan</option>
-                      <option value="Zərdab">Zərdab</option>
-                    </select>
-                  </div>
-
-                  <div class="f_component">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Ünvan *"
-                      />
-                      <span class="input-group-text">
-                        <i class="fa-solid fa-house"></i>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="f_component">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="055XXXXXXX"
-                      />
-                      <span class="input-group-text">
-                        <i class="fa-solid fa-phone"></i>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="f_component">
-                    <span class="f_label">
-                      Pasiyentin şəxsiyyət vəsiqəsinin ön tərəfininin şəklini
-                      yüklə *
-                    </span>
-                    <div class="file-input">
-                      <input type="file" value />
-                      <span>Sənəd yüklə</span>
-                      <button type="submit">yüklə</button>
-                    </div>
-                  </div>
-
-                  <div class="f_component">
-                    <span class="f_label">
-                      Pasiyentin şəxsiyyət vəsiqəsinin arxa tərəfininin şəklini
-                      yüklə *
-                    </span>
-                    <div class="file-input">
-                      <input type="file" value />
-                      <span>Sənəd yüklə</span>
-                      <button type="submit">yüklə</button>
-                    </div>
-                  </div>
-
-                  <button type="submit" class="submit-button">göndər</button>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="partners" data-scroll="true">
+      <section class="partners" data-scroll="true" data-aos="fade-up">
         <div class="container">
           <h2 class="section-title">Tərəfdaşlar</h2>
           <div class="swiper partners-swiper">
@@ -679,7 +687,7 @@
         </div>
       </section>
 
-      <section class="workers" data-scroll="false">
+      <section class="workers" data-scroll="false" data-aos="fade-up">
         <div class="container">
           <h2 class="section-title">Həkim və texniklərimiz</h2>
           <div class="worker-amount">
@@ -813,7 +821,7 @@
         </div>
       </section>
 
-      <section class="gallery" data-scroll="true">
+      <section class="gallery" data-scroll="true" data-aos="fade-up">
         <div class="container">
           <h2 class="section-title">Qalereya</h2>
           <div class="gallery-buttons">
@@ -826,6 +834,7 @@
             <div
               class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
               data-category-id="1"
+              data-aos="fade-up"
             >
               <div class="item">
                 <div class="image">
@@ -844,6 +853,7 @@
             <div
               class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
               data-category-id="1"
+              data-aos="fade-up"
             >
               <div class="item">
                 <div class="image">
@@ -862,6 +872,7 @@
             <div
               class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
               data-category-id="1"
+              data-aos="fade-up"
             >
               <div class="item">
                 <div class="image">
@@ -880,6 +891,7 @@
             <div
               class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
               data-category-id="1"
+              data-aos="fade-up"
             >
               <div class="item">
                 <div class="image">
@@ -898,6 +910,7 @@
             <div
               class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
               data-category-id="2"
+              data-aos="fade-up"
             >
               <div class="item">
                 <div class="image">
@@ -916,6 +929,7 @@
             <div
               class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
               data-category-id="2"
+              data-aos="fade-up"
             >
               <div class="item">
                 <div class="image">
@@ -934,6 +948,7 @@
             <div
               class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
               data-category-id="2"
+              data-aos="fade-up"
             >
               <div class="item">
                 <div class="image">
@@ -952,6 +967,7 @@
             <div
               class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
               data-category-id="2"
+              data-aos="fade-up"
             >
               <div class="item">
                 <div class="image">
@@ -970,6 +986,7 @@
             <div
               class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
               data-category-id="3"
+              data-aos="fade-up"
             >
               <div class="item">
                 <div class="image">
@@ -988,6 +1005,7 @@
             <div
               class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
               data-category-id="3"
+              data-aos="fade-up"
             >
               <div class="item">
                 <div class="image">
@@ -1006,6 +1024,7 @@
             <div
               class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
               data-category-id="3"
+              data-aos="fade-up"
             >
               <div class="item">
                 <div class="image">
@@ -1024,6 +1043,7 @@
             <div
               class="col-12 col-md-6 col-lg-4 col-xl-3 gallery-col"
               data-category-id="3"
+              data-aos="fade-up"
             >
               <div class="item">
                 <div class="image">
@@ -1112,7 +1132,7 @@
       </section>
 
       <section class="contact" data-scroll="true">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="row">
             <div class="col-12">
               <h2 class="section-title">Əlaqə</h2>
@@ -1180,5 +1200,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="swiper.js"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

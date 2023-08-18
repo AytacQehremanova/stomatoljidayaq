@@ -311,7 +311,7 @@ header .menuu-button i{
 .swiper-button-next,
 .swiper-button-prev{
     color: #fff;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .swiper-button-next::after,
@@ -369,6 +369,8 @@ section.home .content{
 section.home .container .text{
     max-width: 700px;
     padding: 20px;
+    font-weight: bold;
+    z-index: 9;
 }
 
 @media only screen and (min-width:576px){
@@ -840,6 +842,12 @@ section.gallery .gallery-buttons{
     padding: 15px;
     width: 100%;
     margin-bottom: 20px;
+}
+
+@media only screen and (max-width:576px){
+    section.gallery .gallery-buttons{
+        justify-content: flex-start;
+    }
 }
 
 section.gallery .gallery-buttons button{

@@ -108,6 +108,9 @@ header .nav-links{
     margin-bottom: 0;
     flex-direction: row;
     cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 
 }
 
